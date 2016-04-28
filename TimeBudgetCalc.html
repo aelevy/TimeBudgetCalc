@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang='en' xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset='utf-8' />
+  <title></title>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' rel='stylesheet' />
+  <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+  <script src='clone-form-td.js'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link href="form-styles.css" rel="stylesheet">
+  <style>
+  #timeCalc {
+    min-width: 524px;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+  </style>
+</head>
+
+<body>
+  <div id="timeCalc">
+    <div class="budgetForm-ENG">
+      <form action="#" method="post" id="BudgetFormEng">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th colspan="4">Time Budget Calculator</th>
+            </tr>
+            <tr>
+              <th id="hourLabel">Hour</th>
+              <th id="minuteLabel">Minutes</th>
+              <th id="activityLabel">Activity</th>
+              <th id="categoryLabel">Category</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="CloneRow">
+              <td>
+                <select class="input_hr form-control" type="number" value="0" name="ID_hour" id="ID_hour" aria-labeledby="hourLabel" min="0">
+                  <option value="0">
+                    0
+                  </option>
+                  <option value="1">
+                    1
+                  </option>
+                  <option value="2">
+                    2
+                  </option>
+                  <option value="3">
+                    3
+                  </option>
+                  <option value="4">
+                    4
+                  </option>
+                  <option value="5">
+                    5
+                  </option>
+                  <option value="6">
+                    6
+                  </option>
+                  <option value="7">
+                    7
+                  </option>
+                  <option value="8">
+                    8
+                  </option>
+                  <option value="9">
+                    9
+                  </option>
+                  <option value="10">
+                    10
+                  </option>
+                  <option value="11">
+                    11
+                  </option>
+                  <option value="12">
+                    12
+                  </option>
+                </select>
+              </td>
+              <td>
+                <select class="input_min form-control" type="number" step="15" value="0" name="ID_min" id="ID_min" min="0" max="45" aria-labeledby="minuteLabel">
+                  <option value="0">
+                    0
+                  </option>
+                  <option value="15">
+                    15
+                  </option>
+                  <option value="30">
+                    30
+                  </option>
+                  <option value="45">
+                    45
+                  </option>
+                </select>
+              </td>
+              <td>
+                <input class="input_act form-control" name="ID_act" id="ID_act" aria-labeledby="activityLabel" type="text">
+              </td>
+              <td>
+                <select class="input_cat form-control" name="ID_cat" id="ID_cat" aria-labeledby="categoryLabel">
+                  <option value="" selected="selected" disabled="disabled">
+                    Select Category
+                  </option>
+                  <option value="Class">
+                    Class
+                  </option>
+                  <option value="Entertainment">
+                    Entertainment
+                  </option>
+                  <option value="Exercise">
+                    Exercise
+                  </option>
+                  <option value="Extracurricular">
+                    Extracurricular
+                  </option>
+                  <option value="Family">
+                    Family
+                  </option>
+                  <option value="Meal">
+                    Meal
+                  </option>
+                  <option value="Other">
+                    Other
+                  </option>
+                  <option value="Personal">
+                    Personal
+                  </option>
+                  <option value="Sleep">
+                    Sleep
+                  </option>
+                  <option value="Social">
+                    Social
+                  </option>
+                  <option value="Study">
+                    Study
+                  </option>
+                  <option value="Work">
+                    Work
+                  </option>
+                </select>
+              </td>
+            </tr>
+            <tr id="CloneRow0">
+              <td>
+                <select class="input_hr form-control" type="number" value="0" name="ID_hour" id="ID_hour" aria-labeledby="hourLabel" min="0">
+                  <option value="0">
+                    0
+                  </option>
+                  <option value="1">
+                    1
+                  </option>
+                  <option value="2">
+                    2
+                  </option>
+                  <option value="3">
+                    3
+                  </option>
+                  <option value="4">
+                    4
+                  </option>
+                  <option value="5">
+                    5
+                  </option>
+                  <option value="6">
+                    6
+                  </option>
+                  <option value="7">
+                    7
+                  </option>
+                  <option value="8">
+                    8
+                  </option>
+                  <option value="9">
+                    9
+                  </option>
+                  <option value="10">
+                    10
+                  </option>
+                  <option value="11">
+                    11
+                  </option>
+                  <option value="12">
+                    12
+                  </option>
+                </select>
+              </td>
+              <td>
+                <select class="input_min form-control" type="number" step="15" value="0" name="ID_min" id="ID_min" min="0" max="45" aria-labeledby="minuteLabel">
+                  <option value="0">
+                    0
+                  </option>
+                  <option value="15">
+                    15
+                  </option>
+                  <option value="30">
+                    30
+                  </option>
+                  <option value="45">
+                    45
+                  </option>
+                </select>
+              </td>
+              <td>
+                <input class="input_act form-control" name="ID0_act" id="ID0_act" aria-labeledby="activityLabel" type="text">
+              </td>
+              <td>
+                <select class="input_cat form-control" name="ID0_cat" id="ID0_cat" aria-labeledby="cateogryLabel">
+                  <option value="" selected="selected" disabled="disbled">
+                    Select Category
+                  </option>
+                  <option value="Class">
+                    Class
+                  </option>
+                  <option value="Entertainment">
+                    Entertainment
+                  </option>
+                  <option value="Exercise">
+                    Exercise
+                  </option>
+                  <option value="Extracurricular">
+                    Extracurricular
+                  </option>
+                  <option value="Family">
+                    Family
+                  </option>
+                  <option value="Meal">
+                    Meal
+                  </option>
+                  <option value="Other">
+                    Other
+                  </option>
+                  <option value="Personal">
+                    Personal
+                  </option>
+                  <option value="Sleep">
+                    Sleep
+                  </option>
+                  <option value="Social">
+                    Social
+                  </option>
+                  <option value="Study">
+                    Study
+                  </option>
+                  <option value="Work">
+                    Work
+                  </option>
+                </select>
+              </td>
+            </tr>
+            <tr id="CloneRow1" class="clonedInput">
+              <td>
+                <select class="input_hr form-control" type="number" value="0" name="ID_hour" id="ID_hour" aria-labeledby="hourLabel" min="0">
+                  <option value="0">
+                    0
+                  </option>
+                  <option value="1">
+                    1
+                  </option>
+                  <option value="2">
+                    2
+                  </option>
+                  <option value="3">
+                    3
+                  </option>
+                  <option value="4">
+                    4
+                  </option>
+                  <option value="5">
+                    5
+                  </option>
+                  <option value="6">
+                    6
+                  </option>
+                  <option value="7">
+                    7
+                  </option>
+                  <option value="8">
+                    8
+                  </option>
+                  <option value="9">
+                    9
+                  </option>
+                  <option value="10">
+                    10
+                  </option>
+                  <option value="11">
+                    11
+                  </option>
+                  <option value="12">
+                    12
+                  </option>
+                </select>
+              </td>
+              <td>
+                <select class="input_min form-control" type="number" step="15" value="0" name="ID_min" id="ID_min" min="0" max="45" aria-labeledby="minuteLabel">
+                  <option value="0">
+                    0
+                  </option>
+                  <option value="15">
+                    15
+                  </option>
+                  <option value="30">
+                    30
+                  </option>
+                  <option value="45">
+                    45
+                  </option>
+                </select>
+              </td>
+              <td>
+                <input class="input_act form-control" name="ID1_act" id="ID1_act" aria-labeledby="activityLabel" type="text">
+              </td>
+              <td>
+                <select class="input_cat form-control" name="ID1_cat" id="ID1_cat" aria-labeledby="cateogryLabel">
+                  <option value="" selected="selected" disabled="disbled">
+                    Select Category
+                  </option>
+                  <option value="Class">
+                    Class
+                  </option>
+                  <option value="Entertainment">
+                    Entertainment
+                  </option>
+                  <option value="Exercise">
+                    Exercise
+                  </option>
+                  <option value="Extracurricular">
+                    Extracurricular
+                  </option>
+                  <option value="Family">
+                    Family
+                  </option>
+                  <option value="Meal">
+                    Meal
+                  </option>
+                  <option value="Other">
+                    Other
+                  </option>
+                  <option value="Personal">
+                    Personal
+                  </option>
+                  <option value="Sleep">
+                    Sleep
+                  </option>
+                  <option value="Social">
+                    Social
+                  </option>
+                  <option value="Study">
+                    Study
+                  </option>
+                  <option value="Work">
+                    Work
+                  </option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="addDelButtons" class="row">
+          <div class="col-md-3">
+            <button type="button" class="btn btn-default" id="btnAdd"><span class="fa fa-plus" aria-label="Add Row" aria-hidden="true"></span></button>
+            <button type="button" class="btn btn-default" id="btnDel"><span class="fa fa-minus" aria-label="Remove Last Row" aria-hidden="true"></span></button>
+            <button type="button" class="btn btn-default" id="btnRes"><span class="fa fa-refresh" aria-label="Reset Form" aria-hidden="true"></span></button>
+          </div>
+          <div class="col-md-6"></div>
+          <div class="col-md-3">
+            <button type="button" id="btnCalc" aria-label="Reset Form" class="calcButton btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">Calculate</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body" id="printThis">
+            <table id="modalTable" class="table table-hover">
+              <thead>
+                <tr>
+                  <th colspan="3">Time Budget Calculator</th>
+                </tr>
+                <tr>
+                  <th id="hourLabel">Hour</th>
+                  <th id="minuteLabel">Minutes</th>
+                  <th id="categoryLabel">Category</th>
+                </tr>
+              </thead>
+              <tbody id="modalBody">
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" id="btnPrint">Print</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    // if Google is down, it looks to local file...
+    if (typeof jQuery == 'undefined') {
+      document.write(unescape("%3Cscript src='js/jquery-1.11.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+  </div>
+</body>
+
+</html>

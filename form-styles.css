@@ -1,0 +1,135 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  }
+
+#screenContainerEng .budgetForm-ENG table th,
+#screenContainerEng .budgetForm-ENG table tr,
+#screenContainerEng .budgetForm-ENG table td,
+#screenContainerEng .budgetForm-ENG table {
+	border: none !important;
+}
+
+#screenContainerEng .budgetForm-ENG table th {
+	padding:.5em 0;
+	text-align: center;
+	background: #376647;
+	color: #ffffff;
+	font-size:1.5em;
+	font-weight: 700;
+	/*margin: 0 0 .25em 0;*/
+}
+
+#screenContainerEng .budgetForm-ENG table th#hourLabel,
+#screenContainerEng .budgetForm-ENG table th#minuteLabel,
+#screenContainerEng .budgetForm-ENG table th#activityLabel,
+#screenContainerEng .budgetForm-ENG table th#categoryLabel,
+#screenContainerEng .budgetForm-ENG table tr.output th {
+	background: #ffffff;
+	color: #376647;
+	font-size: 1em;
+}
+
+.calcButton {
+	float:right;
+}
+.form-control{
+	width:100%;
+}
+
+#screenContainer #screenContainerEng table{
+	width:100%;
+}
+#screenContainer #screenContainerEng table th {
+	border-right: 1px solid #eee;
+	}
+
+#screenContainer #screenContainerEng table td {
+border-right: 1px solid #eee;
+}
+
+#screenContainerEng .budgetForm-ENG table tr.output th {
+	text-align: right;
+	vertical-align: middle;
+}
+
+#screenContainerEng .budgetForm-ENG table td#output {
+	text-align: left;
+	vertical-align: middle;
+}
+
+#screenContainerEng .budgetForm-ENG table th#hourLabel,
+#screenContainerEng .budgetForm-ENG table th#minuteLabel,
+#screenContainerEng .budgetForm-ENG table th#categoryLabel {
+	width: 10%
+}
+
+#screenContainerEng .budgetForm-ENG select,
+#screenContainerEng .budgetForm-ENG input {
+	font-size: .75em;
+}
+
+
+#screenContainerEng .budgetForm-ENG input[type='number'] {
+	width: 4em;
+	text-align: center;
+}
+
+#screenContainerEng .budgetForm-ENG input[type='text'] {
+	width: 100%;
+	text-align: left;
+}
+@media screen {
+  #printSection {
+      display: none;
+  }
+}
+
+@media print {
+  body * {
+    visibility:hidden;
+  }
+  #printSection, #printSection * {
+  	z-index:100;
+    visibility:visible;
+  }
+  #printSection {
+    position:absolute;
+    left:0;
+    top:0;
+    width:90%;
+  }
+  #printSection table{
+  	font-family: 'Lato', arial, sans-serif;
+    margin: 2em auto;
+    border: 2px solid #eee;
+    text-align:center;
+  }
+  #printSection th{
+  	border: 1px solid #eee;
+  	text-align:center;
+  }
+  #printSection tr{
+  	border: 2px solid #eee;
+  }
+  #printSection td{
+  	border: 1px solid #eee;
+  }
+}
+/*#screenContainerEng .budgetForm-ENG #addDelButtons {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: -2em;
+}*/
+
+/*#screenContainerEng .budgetForm-ENG button {
+	display: inline-block;
+	border: none;
+	background: none;
+	font-size: 2em;
+	color: #376647;
+	cursor: pointer;
+}
+*/
